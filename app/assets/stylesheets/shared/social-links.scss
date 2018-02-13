@@ -8,25 +8,6 @@
   z-index: 99;
 }
 
-#social_side_links .app li a {
-  display: block;
-
-  &:hover {
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  }
-}
-
-#social_side_links .blog li a {
-  display: block;
-
-  &:hover {
-  text-decoration: none;
-  border-radius: 50%;
-  }
-}
-
 #social_side_links li a i {
   display: block;
   width: 45px;
@@ -42,25 +23,32 @@
   text-align: center;
 }
 
-#social_side_links .blog li a i {
-  background-color: transparent;
-  margin-bottom: 5px;
-  border-radius: 50%;
-}
-
 .social-links {
+  color: white;
+
+  a {
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   .fa {
     &.fa-github {
-      color: #333;
+      background-color: #333 !important;
     }
     &.fa-facebook {
-      color: #3b5998;
+      background-color: #3b5998 !important;
     }
     &.fa-linkedin {
-      color: #0077B5;
+      background-color: #0077B5 !important;
     }
     &.fa-google {
-      color: #dd4b39;
+      background-color: #dd4b39 !important;
+    }
+    &:hover {
+      opacity: 0.9;
     }
   }
 }

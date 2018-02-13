@@ -16,8 +16,7 @@
   </head>
 
   <body>
-    <%= render "shared/portfolio_nav" %>
-    <%= render "shared/portfolio_jumbotron" unless logged_in?(:site_admin) %>
+    <%= render "shared/blog_nav" %>
 
     <%= render partial: "shared/social_links_side", locals: {layout: "app"} %>
     <main role="main">

@@ -15,9 +15,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-
+    <%= render "shared/blog_nav" %>
     <div class="container">
-      <%= render "shared/blog_nav" %>
       <%= render "shared/blog_jumbotron" unless logged_in?(:site_admin) %>
       <!-- <%= render "shared/blog_featured" %> Planned for later -->
     </div>

@@ -4,16 +4,15 @@
       <h1><%= image_tag portfolio_img(@portfolio.main_image, "main"), width: '100%' %></h1>
     </div>
     <div class="col-md-5">
-      <p><%= @portfolio.title %></p>
-
+      <h1 class="portfolio-title"><%= @portfolio.title %></h1>
       <hr>
 
-      <p><%= @portfolio.subtitle %></p>
+      <p class="portfolio-subtitle"><%= @portfolio.subtitle %></p>
       <p><%= markdown @portfolio.body %></p>
 
       <hr>
 
-      <h3>Technology Used: </h3>
+      <h3 class="portfolio-tech">Technology Used: </h3>
 
       <% @portfolio.technologies.each do |tech|  %>
         <p><%= tech.name %></p>

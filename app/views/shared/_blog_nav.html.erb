@@ -1,10 +1,15 @@
-<div class="nav-scroller py-1 mb-2">
-  <nav class="nav d-flex">
-    <div class="blog-nav">
-      <%= nav_helper "p-2 text-muted", "span" %>
+<nav class="navbar navbar-expand-md">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+       <%= nav_helper "nav-link", "span" %>
+      </div>
+      <div class="navbar-nav ml-auto">
+       <%= login_helper 'nav-link' %>
+      </div>
     </div>
-    <div class="nav-links">
-      <%= login_helper "nav-link" %>
-    </div>
-  </nav>
-</div>
+  </div>
+</nav>

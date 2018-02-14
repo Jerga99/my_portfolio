@@ -24,6 +24,7 @@
   color: white !important;
   background-color: #eab126 !important;
   border: 1px solid #eab126 !important;
+  border-radius: 0 !important;
 
   &:hover, &:focus, &:active {
     background-color: #eab126 !important;
@@ -166,8 +167,6 @@ font-family: 'Roboto', sans-serif;
 }
 
 .home-container {
-  margin-top: 150px;
-
   h1 {
     margin-bottom: 20px;
     font-size: 53px;
@@ -200,6 +199,31 @@ font-family: 'Roboto', sans-serif;
 .cv-section {
   .btn-portfolio {
     margin: 10px 0;
+  }
+}
+
+.typed-header {
+  font-weight: bold;
+}
+
+.task-container {
+  width: 200px;
+  height: 170px;
+  padding: 20px;
+
+  background-color: #4b4bf6;
+  color: white;
+  span {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  .task-time {
+    font-size: 14px;
+    text-transform: italic;
   }
 }
 

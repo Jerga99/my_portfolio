@@ -10,5 +10,6 @@ module DefaultPageContent
     @seo_keywords = "Filip Jerga, programmer, developer, freelancer, Javascript, React, Angular, Rails, Ruby"
     @seo_description = "Filip Jerga portfolio and blog page"
     @seo_author = "Filip Jerga"
+    @current_task = Task.last
   end
 end

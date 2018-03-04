@@ -1,6 +1,6 @@
 class PortfolioUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
-  process resize_to_limit: [300, 300]
+  process resize_to_limit: [800, 800]
   storage :fog
 
   def store_dir

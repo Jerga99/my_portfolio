@@ -16,6 +16,9 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
+  get 'profile/edit', to: 'profiles#edit', as: 'profiles_edit'
+  patch 'profile', to: 'profiles#update'
+
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'

@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   end
 
   def home
-    @blogs = Blog.all
+    @profile = Profile.first
   end
 
   def about

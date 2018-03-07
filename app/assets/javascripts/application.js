@@ -19,6 +19,8 @@
 //= require gritter
 //= require lib/typed.min
 //= require typed-implementation
+//= require shufflejs/dist/shuffle.min
+//= require shuffle
 //= require cable
 //= require turbolinks
 //= require_tree .

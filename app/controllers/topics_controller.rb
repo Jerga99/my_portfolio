@@ -1,5 +1,7 @@
 class TopicsController < ApplicationController
   before_action :set_sidebar_topics, :set_featured_blog
+  before_action :set_page_defaults_blog
+
   layout 'blog'
   def index
     @topics = Topic.all

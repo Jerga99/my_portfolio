@@ -1,13 +1,47 @@
-<div class=task-container>
-  <h2 class="typed-header">Working on </h2>
-  <p class="task-time">From <%= @current_task.created_at.to_formatted_s(:short) %></p>
-  <span id="elemenTyped" data-text="<%= @current_task.body %>"></span>
+<div class="container">
+  <div class="row heading-row">
+    <div class="task-container col-md-4">
+      <p class="typed-header">Working on </p>
+      <p class="task-time">From <%= @current_task.created_at.to_formatted_s(:short) %></p>
+      <span id="elemenTyped" data-text="<%= @current_task.body %>"></span>
+    </div>
+
+    <% @blogs.each do |blog| %>
+      <div class="col-md-4 float-right">
+        <%= render partial: "shared/application/featured_blogs", locals: {blog: blog} %>
+      </div>
+    <% end %>
+  </div>
 </div>
 
 <div class="home-container">
-  <h1 class="cover-heading home-title">Welcome</h1>
-  <p class="home-p"><%= @profile.header %></p>
-  <p>
-    <%= link_to("About Me", about_me_path, class: "btn btn-lg btn-secondary btn-portfolio") %>
-  </p>
+  <h1 class="cover-heading home-title hidden">Filip Jerga web development solutions </h1>
+  <div class="row leading-box">
+    <div class="container">
+      <h2>You can expect...</h2>
+      <span class="home-p"><%= markdown (@profile.header) %></span>
+    </div>
+  </div>
+  <div class="container service-container">
+    <div class="row service-row">
+      <div class="col-md-4">
+        <div class="service">
+          <%= fa_icon("connectdevelop") %>
+          <p>More than 8 years of programming experience. Knowledge of new modern frameworks. Experience in system architecture.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+          <%= fa_icon("comments") %>
+          <p>Immediate response time. Every step of project is well communicated. Understand client needs is my priority number one.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+          <%= fa_icon("signal") %>
+          <p>Help you improve your business is my main priority and goal. Development is not finished until client is fully satisfied and happy with product.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

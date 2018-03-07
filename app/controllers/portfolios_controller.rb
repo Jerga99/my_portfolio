@@ -1,5 +1,6 @@
 class PortfoliosController < ApplicationController
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
+  before_action :set_page_defaults_portfolio
   layout "portfolio"
 
   def index
@@ -7,7 +8,7 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-    @portfolio = Portfolio.find(params[:id])
+    @portfolio = Portfolio.friendly.find(params[:id])
   end
 
   def angular

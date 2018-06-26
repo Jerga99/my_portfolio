@@ -80,7 +80,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 
 .content-wrapper {
@@ -94,6 +94,56 @@ font-family: 'Roboto', sans-serif;
 
 .app-nav span {
   margin: 0 15px;
+}
+
+.catcher {
+  position: relative;
+
+  .catcher-text {
+    margin-top: 50px;
+    width: 300px;
+  }
+
+  .catcher-img {
+    border-radius: 50%;
+  }
+
+  margin-bottom: 60px;
+}
+
+.navigation-second {
+  position: absolute;
+  bottom: -115px;
+
+  ul {
+    list-style-type: none;
+
+    a {
+      color: #3d3d3d;
+      letter-spacing: 1px;
+    }
+
+    > li {
+      margin-right: 40px;
+      font-size: 50px;
+      display: inline-block;
+      /* You can also add some margins here to make it look prettier */
+      zoom:1;
+      *display:inline;
+      /* this fix is needed for IE7- */
+    }
+  }
+}
+
+.home-page {
+  h2 {
+    font-size: 43px;
+    color: #5a5a5a;
+  }
+  p {
+    font-size: 16px;
+    color: #5a5a5a;
+  }
 }
 
 .tech-news {
@@ -164,6 +214,11 @@ font-family: 'Roboto', sans-serif;
   background-color: #101b27;
   margin-top: -60px;
   color: white;
+  text-align: left;
+
+  .favicon {
+    float: right;
+  }
 }
 
 .home-container {
@@ -361,7 +416,7 @@ h5 {
 }
 
 .leading-box {
-  padding: 70px 100px;
+  padding: 80px 100px;
   margin-bottom: 30px;
   background-color: white;
   color: #545252;

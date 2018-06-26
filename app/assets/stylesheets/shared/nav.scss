@@ -1,22 +1,19 @@
 // nav
 
 .navbar {
-  background-color: #101b27;
+  background-color: white;
   margin-bottom: 40px;
   padding: 0;
+  border-bottom: 3px solid #4690FC;
 
   &-nav {
     .nav-link {
-      color: white;
-      padding: 20px 15px !important;
+      color: black;
+      padding: 30px 15px !important;
       font-size: 14px;
-      text-transform: uppercase;
 
       &.active {
-        text-decoration: underline;
-      }
-      &:hover {
-        color: #9999e6;
+       color: #4690FC;
       }
     }
   }
@@ -25,10 +22,12 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-right: 40px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
   }
 
   .register-btn {
-    background-color: #29bc97;
 
     &:hover {
       color: black;
@@ -36,7 +35,6 @@
   }
 
   .login-btn {
-    background-color: #24cb4f;
 
     &:hover {
       color: black;
@@ -44,7 +42,6 @@
   }
 
   .logout-btn {
-    background-color: #ff4a4a;
 
     &:hover {
       color: black;

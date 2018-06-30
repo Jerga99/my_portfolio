@@ -6,13 +6,13 @@ Rails.application.routes.draw do
     put :sort, on: :collection
   end
 
-  get 'angular-items', to: 'portfolios#angular'
+  # get 'angular-items', to: 'portfolios#angular'
 
-  resources :blogs do
-    member do
-      get :toggle_status
-    end
-  end
+  # resources :blogs do
+  #   member do
+  #     get :toggle_status
+  #   end
+  # end
 
   root to: 'pages#home'
 
